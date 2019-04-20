@@ -15,4 +15,4 @@
     },
 ]
 ```
-# Exercutar node exercicios/[file].js para fazer os execícios.
+### Exercutar node exercicios/[file].js para fazer os execícios.
