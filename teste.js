@@ -1,13 +1,14 @@
 const Dispersao = require('./Dispersao');
 const CoeficienteVariacao = require('./CoeficienteVariacao');
+const MathHelper = require('./MathHelper');
 
 (async ()=> {
     console.log("Teste dos cálculos...");
 
-    const dados = [45, 52, 54, 61];
+    const dados = [1, 2, 3, 4, 5, 1, 3, 4, 5, 10];
     
-    const CV = CoeficienteVariacao.calcCoeficienteVariacao(dados);
-    console.log(`Coeficiente de Variação: ${CV}`);
+    
+    const moda = MathHelper.calcMediana(dados);
+    console.log(moda);
 
-    console.log("Fim!");
 })();
