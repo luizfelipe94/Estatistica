@@ -29,18 +29,19 @@ class MathHelper {
         return moda;
     }
     static calcMediana(dados){
-        const rol = dados.sort((a, b) => a - b);
-        if(rol.length % 2 == 0){
-            const aux1 = (rol.length / 2) - 1;
-            const aux2 = (rol.length / 2) + 1;
-            const total = rol[aux1 + 1] + rol[aux2 + 1];
-            const result = total / 2;
-            return result;
-        }else{
-            const pos = ((rol.length / 2) + 0.5) - 1;
-            const result = rol[pos];
-            return result;
-        }
+        // const rol = dados.sort((a, b) => a - b);
+        // if(rol.length % 2 == 0){
+        //     const aux1 = (rol.length / 2) - 1;
+        //     const aux2 = (rol.length / 2) + 1;
+        //     const total = rol[aux1 + 1] + rol[aux2 + 1];
+        //     const result = total / 2;
+        //     return result;
+        // }else{
+        //     const pos = ((rol.length / 2) + 0.5) - 1;
+        //     const result = rol[pos];
+        //     return result;
+        // }
+        // TODO: Fazer calculo de mediana.
     }
 }
 

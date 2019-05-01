@@ -29,7 +29,7 @@ class Dispersao extends MathHelper{
         return totalAux / dados.length;
     }
 
-    static calcVariancia(dados, bessel){
+    static calcVariancia(dados, bessel = true){
         // bessel é um fator de correção para auxíliar no calculo de variância.
         const media = this.calcMedia(dados);
         const aux = [];
@@ -42,7 +42,7 @@ class Dispersao extends MathHelper{
         return result.toFixed(2);
     }
 
-    static calcDesvioPadrao(dados, bessel = false){
+    static calcDesvioPadrao(dados, bessel = true){
         const variancia = this.calcVariancia(dados, bessel);
         const result = Math.sqrt(variancia);
         return result.toFixed(2);
